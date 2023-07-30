@@ -13,6 +13,9 @@ app.get("/voter", function(req,res) {
 app.get("/candidate", function(req,res) {
     res.render("list2");
 })
+app.get("/votecandid", function(req,res) {
+    res.render("list3");
+})
 app.listen( 3000,function() { 
     console.log("server is running on port 3000");
 })
