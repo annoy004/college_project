@@ -1,0 +1,65 @@
+body {
+    background-color: whitesmoke;
+  }
+
+
+
+
+
+  /* .card-img img{
+    width: 100%;
+    opacity: 0.5;
+
+  }*/
+
+
+
+
+
+
+  table,
+  th,
+  td {
+    border: 1px solid rgb(242, 240, 240);
+    border-collapse: collapse;
+
+  }
+
+  .head {
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  table {
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  .center {
+    text-align: center;
+  }
+
+
+
+
+  .bttn:hover{
+    color: #fdfdfe;
+    background-color: rgb(22, 109, 19);
+    border-radius: 20px;
+    border: #28044b;
+  }
+   img{
+    width: 4rem;
+   }
+.gap {
+    padding: 5%;
+}
+.small-gap {
+    padding-bottom: 2rem;
+}
+ .head {
+    margin: 5rem 0rem 0rem 5rem;
+ }
