@@ -55,11 +55,11 @@ body {
     width: 4rem;
    }
 .gap {
-    padding: 5%;
+    padding: 2% 5% 2% 5%;
 }
 .small-gap {
     padding-bottom: 2rem;
 }
  .head {
-    margin: 5rem 0rem 0rem 5rem;
+    margin: 2rem 0rem 0rem 2rem;
  }

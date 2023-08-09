@@ -66,25 +66,23 @@
 
           <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Candidate info</h4>
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" action="/" method="post"  novalidate>
+          
           <div class="row g-3">
+            
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <label for="firstName" class="form-label">your name</label>
+              <input type="text" class="form-control" name="candidname" id="firstName" placeholder="" value="" >
             
             </div>
 
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              
-            </div>
+            
 
-            <div class="col-12">
+           <div class="col-12">
               <label for="party name" class="form-label">party name</label>
          
                 <span class="input-group-text">eg. BJP</span>
-                <input type="text" class="form-control" id="party name" placeholder="party name" required>
+                <input type="text" class="form-control" name="candidparty" id="party name" placeholder="party name" >
               
              
             </div>
@@ -92,26 +90,27 @@
                
                
                 <label form="profile-picture" class="form-label">Profile Picture:</label>
-                <input type="file" id="profile-picture" class="form-control" id="profile-picture" required>
+                <input type="file" id="image" name="image" class="form-control" id="profile-picture" >
               </div>
               <div class="col-12">
 
                 <label form="party_symbol" class="form-label">party symbol:</label>
-                <input type="file" id="party_symbol" class="form-control" id="party_symbol" required>
+                <input type="file" id="party_symbol" name="candidpartypic" class="form-control" id="party_symbol" >
                
               </div>
 
             <div class="col-12">
               <label for="email" class="form-label">Email </label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" >
              
-            </div>
+           </div>
+              
             <div class="col-12">
                 <label for="dob" class="form-label">Date of birth: <span class="text-body-secondary">(Optional)</span></label>
                 <input type="date" class="form-control" id="dob" placeholder="dd-mm-yyyy">
                
               </div>
-
+          
 
             <div class="col-md-4">
                 <label for="state" class="form-label">Gender</label>
@@ -125,18 +124,18 @@
 
             <div class="col-12">
               <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" >
              
             </div>
-
+  
             <div class="col-12">
               <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" required>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" >
             </div>
            
             <div class="col-md-6 col-lg-6">
               <label for="year" class="form-label">year</label>
-              <select class="form-select" id="year" required>
+              <select class="form-select" name="year"  id="year">
                 <option value="">Choose...</option>
                 <option>fe</option>
                 <option>se</option>
@@ -145,7 +144,7 @@
 
               <div class="col-md-6 col-lg-6">
                 <label for="Branch" class="form-label">Branch</label>
-                <select class="form-select" id="Branch" required>
+                <select class="form-select" name="branch" id="Branch" >
                   <option value="">Choose...</option>
                   <option>comp</option>
                   <option>IT</option>
@@ -154,7 +153,7 @@
               </div>
               <div class="col-md-6 col-lg-6">
                 <label for="class" class="form-label">Class</label>
-                <select class="form-select" id="Class" required>
+                <select class="form-select" id="Class" >
                   <option value="">Choose...</option>
                   <option>A</option>
                   <option>B</option>
@@ -163,34 +162,35 @@
            
             </div>
           </div>
-
+<!-- ................................................................................ -->
           <hr class="my-4">
 
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address" required>
+            <input type="checkbox" class="form-check-input" id="same-address" >
             <label class="form-check-label" for="same-address">checkout detail onemore time</label>
           </div>
 
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info" required>
+            <input type="checkbox" class="form-check-input" id="save-info" >
             <label class="form-check-label" for="save-info">you agree all terms and condition</label>
           </div>
 
           <hr class="my-12">
 
          
-            
+             
 
        
 
           
 
     
-          </div>
+          
 
           <hr class="my-12">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit" name="list">Continue to checkout</button>
+          
         </form>
       </div>
     </div>

@@ -1,0 +1,129 @@
+
+.navbar{
+  background-color: 	rgb(33,47,58);
+}
+body{
+  background-color: #f1f2f2;
+}
+
+.front {
+  background-color: black;/*changes the background color of carousel*/
+}
+
+.blackk {      /*fixes width and align center the text of first slide of carousel*/
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+          /*to change the opacity of carausal*/
+.back {
+  opacity: 0.3;
+  width: 100%;
+}
+.what{
+  background-color: #fafafa;
+}
+
+/*button wala section*/
+
+
+.liad{                  /*   to make are u candidate center*/
+padding-left: 150px;
+}
+.liad:hover{
+color: rgb(192, 0, 0);
+font-weight: bold;
+
+}
+.align{                 /*   to place both the buttons one after the other*/
+display: flex;
+}
+.bttn{
+
+  padding: 12px 24px;
+  background-image: linear-gradient(	rgb(87, 1, 1),  rgb(173, 17, 17),rgb(189, 108, 108));
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.bttn:hover {
+    background-image: linear-gradient(	rgb(187, 1, 1),  rgb(170, 41, 41),rgb(223, 124, 124));
+  border-radius: 8px;
+  color: #000000; 
+  font-weight: bolder;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+
+
+/*  chunav ke intro wala section*/
+
+
+
+.image{                      /*lugu design*/
+  height: 70px;
+  border-radius: 150px;
+}
+.line{          /* used in hr of introduction */
+  background-color: #e2a866;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+
+}
+
+/* cards wala section*/
+
+.clas{
+  margin-left: 50px; /*used in why should u choose us line*/
+}
+.clas:hover{
+  color:red;
+}
+.color:hover{               /*to change the color of subheadings in 4th section*/
+      color:coral;  
+      text-decoration: underline;   
+}
+.display{            /* used in section 34to avoid overlapping of cards*/
+  margin-bottom: 20px;
+}
+.display:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding-left: 30px;
+padding-top: 40px;
+}
+.lugu{                 /* used in section 4 to adjust logo og cards*/
+  margin-left: -300px;
+ 
+}
+.shadow{                 /*used to add shodow in 4rd section*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  background-color: #fafafa;
+}
+
+/* card ke niche wala section*/
+
+li:hover{   /*  used in 5th section i.e list items to make its font bold */
+      background-color: #f7f4f4;
+      font-weight: bolder;
+}
+  /*****************              Footer                 ***********/
+
+.blog-footer {
+
+  bottom: 0;
+  padding: 2.5rem 0;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  height: 120px;
+  background-color: 	rgb(33,47,58);
+}
+.space {
+
+  margin-right: 50px;
+}
+.top {
+  padding-top: 30px;
+}

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Voting system</title>
+  <link rel="stylesheet" href="css/stylo.css">
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#"><b>Chunav</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/adminlogin">Admin Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/candidatelogin">Candidate Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/voter">Voter registration</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Guidelines</a>
+                        <a class="dropdown-item" href="#">About us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">F&Q</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+  <div class="front">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="back" src="https://source.unsplash.com/1400x400/?college,student" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="blackk"><b>Welcome to TCET's Online </b>
+              <p class="blackk"><b>Voting System</b></p>
+            </h1>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="back" src="https://source.unsplash.com/1400x400/?tcet,student" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>When we vote, our values are put into action and our voices are heard. Your voice is a remainder that you matter because you do, and you deserve to be heard.</h5>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="back" src="https://source.unsplash.com/1400x400/?school,kerela" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Use Chunav for every chunav which is happening in your college!..<p>&#128512;</p></h4>
+            
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+<br>
+<br>
+
+<div class="align">
+  <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 liad">Are you a new  candidate? Click on the register button below</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="link" href="/candidate"><button type="button" class="btn btn-primary btn-lg px-4 gap-3 bttn">candidate registration</button></a>
+        
+      </div>
+    </div>
+<div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 liad">Are you a Voter? Click on the voter registration button below</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="link" href="/voter"><button type="button" class="btn btn-primary btn-lg px-4 gap-3 bttn">voter registration</button></a>
+      </div>
+    </div>
+    </div>
+
+
+
+
+  <div class="px-4 py-5 my-5 text-center what ">
+    <img class="d-block mx-auto mb-4 image " src="images/lugu.png" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">What is Chunav?</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Chunav is an online voting system which helps you to shift from traditional ballot system to the mysterious world of internet. With the help of this system you do not have to stand in long queue and you can save your time too. Now you can vote anytime, anywhere at the comfort of your place.</p>
+     <hr class="line">
+    </div>
+  </div>
+
+
+
+  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5 shadow">
+    <div class="col d-flex flex-column align-items-start gap-2">
+      <h2 class="fw-bold text-body-emphasis clas ">Why you should choose us?</h2>
+    </div>
+    <div class="col">
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="col d-flex flex-column gap-2 display">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 lugu">
+            <img class="d-block mx-auto mb-4  " src="images/l1.jpeg" alt="" width="82" height="66">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis color">Easy and convinient</h4>
+          <p class="text-body-secondary">It becomes easy to vote when you use Chunav.</p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2 display">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 lugu">
+            <img class="d-block mx-auto mb-4  " src="images/l2.jpeg" alt="" width="82" height="66">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis color">Secure</h4>
+          <p class="text-body-secondary">It does not reveal the identity of voter and safe in every possible way.</p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2 display">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 lugu">
+            <img class="d-block mx-auto mb-4  " src="images/l3.jpeg" alt="" width="82" height="66">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis color">Accessibility</h4>
+          <p class="text-body-secondary"> You can use it anytime-anywhere. </p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2 display">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 lugu">
+            <img class="d-block mx-auto mb-4  " src="images/l4.jpeg" alt="" width="82" height="66">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis color">Affordable</h4>
+          <p class="text-body-secondary">To use this system all you need is a good internet connection.</p>
+        </div>
+
+<div class="col d-flex flex-column gap-2 display">
+  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 lugu">
+    <img class="d-block mx-auto mb-4  " src="images/l5 - Copy.jpeg" alt="" width="82" height="66">
+  </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis color">Free of Cost</h4>
+          <p class="text-body-secondary">It is completely free. You do not need to pay a single penny to use it.</p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2 display">
+          <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 lugu">
+            <img class="d-block mx-auto mb-4  " src="images/l6.jpeg" alt="" width="82" height="66">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis color">Fast results</h4>
+          <p class="text-body-secondary"> As soon as the voting ends it shares results and statistics with you in a fraction of seconds.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+<div class="elec">
+  <h2>Chunav can be used for:</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Class Representative Elections</li>
+    <li class="list-group-item">Club Member's Elections</li>
+    <li class="list-group-item">Faculty selection</li>
+    <li class="list-group-item">Campus Elections</li>
+    <li class="list-group-item">Many More</li>
+  </ul>
+</div>
+<br><br>
+  <footer class="blog-footer">
+    <span class="space">Theme</span> <span class="space">Privacy Policy</span> <span class="space">Terms and
+      Condition</span><span class="space">Content copyright</span>
+    <div class="top"> <span>Made with ❤	
+      in TCET</span></div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

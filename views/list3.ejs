@@ -22,33 +22,33 @@
     <table style="width:100%">
       <div class="container">
       <tr class="row">
-        <th class="left col-2">party</th>
-        <th class="center col-2">party symbol</th>
-        <th class="center col-4">candidate</th>
-        <th class="center col-2">candidate photo</th>
-        <th class="center col-2"> </th>
+        <th class="left col-2">candidate name</th>
+        <th class="center col-2">partyname</th>
+        <th class="center col-4">year</th>
+        <th class="center col-2">branch</th>
+        <th class="center col-2">vote </th>
 
       </tr>
     </div>
     <hr>
-    <div class="small-gap"></div>
+   
 
-    <tr class="row">
-      <td class="left col-2">jai shree ram</td>
-      <td class="center col-2"><img src="images/My_project-removebg-preview (1).png" alt=""></td>
-      <td class="center col-4">arnav vinay singhddddddddddddddddddddddddddd</td>
-      <td class="center col-2"><img src="images/My_project-removebg-preview (1).png" alt=""></td>
-      <td class="center col-2"><button type="button" class="btn btn-outline-success">vote</button></td>
 
-    </tr>
+    <% candiditems.forEach(function(item) {%>
+      <form  action="/incrvote" method="post" >
     <tr class="row">
-        <td class="left col-2">jai shree ram</td>
-        <td class="center col-2"><img src="images/My_project-removebg-preview (1).png" alt=""></td>
-        <td class="center col-4">arnav vinay singh</td>
-        <td class="center col-2"><img src="images/My_project-removebg-preview (1).png" alt=""></td>
-        <td class="center col-2"><button type="button" class="btn btn-outline-success">vote</button></td>
-  
+        <td  class="left col-2"><%=item.name%></td>
+        <td class="center col-2"><%=item.party%></td>
+        <td class="center col-4"><%=item.year%></td>
+        <td class="center col-2"><%=item.branch%></td>
+        <td class="center col-2">  <input type="checkbox" name="checkbox" value = "<%=item._id%>" onchange="this.form.submit()"></td>
+      </form>
+        <%  }) %>
       </tr>
+      </form>
+
+      
+    
 
    
     </table>
