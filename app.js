@@ -23,10 +23,16 @@ const voterSchema ={
 } 
 const Voter = mongoose.model("Voter",voterSchema);
 
-const arnav = new Voter({
-    name :"arnav"
+const passwordSchema = {
+    password:String,
+}
+const Passwrd = mongoose.model("Passwrd", passwordSchema);
+
+
+const passing = new Passwrd({
+  password : "tcet@123"
 });
-  arnav.save();
+//   passing.save();
 
 const app = express();
 app.use(bodyparser.urlencoded({entended : true}));
@@ -104,6 +110,8 @@ app.post("/incrvote",function(req,res) {
  
  });
 
+ 
+
 
 
 app.get("/voter", function(req,res) {
@@ -165,6 +173,7 @@ app.listen( 3000,function() {
 
 
 app.post("/voter",function(req,res) {
+    
    const votname = req.body.vname;
    const votemail = req.body.vemail;
    const votyear = req.body.vyear;
@@ -212,3 +221,32 @@ app.post("/voter",function(req,res) {
       getdocument();  
     
 });
+
+app.post("/pass",function(req,res) {
+    const pass = req.body.masspass;
+    console.log(pass);
+    const getdocument = async () => {
+        try{
+    const resultics = await Passwrd.findOne({ password:pass }).exec();
+    console.log (resultics);
+
+        if (resultics === null ) {
+         res.send("password is wrong")
+
+        }else {
+            
+        res.redirect("/voteadmin")
+        }
+    }catch(err){
+     console.log(err);
+    }
+      }
+     
+      
+
+      getdocument();  
+    
+})
+
+
+
